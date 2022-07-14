@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Midterm</title>
+</head>
+
+<body class="main-container">
+    <header>
+        <div class="header-top">
+           
+            <form class="search-box" action="get">
+                <label for="search.box" class="search"></label>
+                <input type="search" id="search.box" placeholder="Search" name="search">
+                <button type="submit"><i class='fas fa-search'></i></button>
+            </form>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li>
+                    <a class="nav1" href="index.html"><i class=' fas fa-home'></i></a>
+                    <a class="nav2" href="about.html">About Us</a>
+                    <a class="nav3" href="contacts.html">Connect</a>
+                    <a class="nav4" href="#">Products</a>
+                    <a class="nav5" href="#">Basket</a>
+            
+                </li>
+            </ul>
+        </nav>
+    </header>
+  
+    <main>
+        <div class="main-content">
+       
+            <div class="contacts">
+                <h1>CONTACT</h1>
+                <p>
+                    Fill the below items to contact:
+                </p>
+                <section class="contact-us">
+
+                    <!-- contacting  form  -->
+                    <div class="contact-body">
+                        <div class="message">
+                            <h2>Send an email</h2>
+                            <form id="contact-form" class="contact-form" method="post" action="contact.html">
+                                <div class="contact-form">
+                                    <label for="fullname" class="small-header">Full Name</label>
+                                    <div>
+                                        <input type="text" id="fullname" name="fullname" class="contact-control"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="contact-form">
+                                    <label for="email" class="small-header">Email</label>
+                                    <div>
+                                        <input type="email" id="email" name="youremail" class="contact-control"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="contact-form">
+                                    <label for="message" class="small-header">Message</label>
+                                    <div>
+                                        <textarea id="message" name="yourmessage" class="contact-control" rows="8"
+                                            required></textarea>
+                                    </div>
+                                </div>
+                                <div class="contact-form">
+                                  
+                                    <button type="submit" class="contact-btn">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section><!-- contact close -->
+            </div>
+        </div>
+    </main>
+        <!-- footer  -->
+        <footer class="site-footer">
+            <div class="copyright">
+                <p class="copy-text">Copyright &copy; Wild flour,2022 <i class='far fa-registered'></i></p>
+                
+        </div>
+        <div class="footer-nav">
+            <ul>
+                <li><!-- footer social site-->
+                    <a href="https://twitter.com/?lang=en"><i class='fab fa-twitter'></i></a>
+                    <a href="https://www.facebook.com/"><i class='fab fa-facebook'></i></a>
+                    <a href="https://www.instagram.com/"><i class='fab fa-instagram'></i></a>
+             
+                    
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

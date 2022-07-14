@@ -1,0 +1,273 @@
+
+html {
+	color: #982af1;
+	background-color: #e4e71c;
+}
+/*adding background color to header*/
+.header{
+	background-color: #ffffff;
+
+}
+img {
+	width: 100%;
+	margin: 10px auto;
+
+}
+/*hover color change*/
+a,
+a:link,
+a:visited {
+	color: inherit;
+}
+a:hover,
+a:focus {
+	color: #ff0a0a;
+}
+/*logo design*/
+.logo {
+	grid-area: logo;
+	width: auto;
+	max-width: 100%;
+	height: auto;
+	margin: -8px auto -25px auto;
+	padding: 50px;
+}
+
+
+.search-box {
+	display: none;
+}
+
+.main-image {
+	max-width: 100%;
+}
+.main-nav{
+	color: #000000;
+}
+
+/* styling nav bar  */
+
+.main-nav a {
+	text-decoration: none;
+	padding: 10px 20px 20px 20px;
+}
+
+.main-nav {
+
+	align-items: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+	line-height: 1rem;
+	width: 80%;
+}
+
+.nav-list a {
+	margin: 3px 8px;
+	display: block;
+	text-align: center;
+	align-items: center;
+	padding: 0;
+}
+
+/* styling footer  */
+footer{
+	background-color:#560a90;
+	padding:16px;
+	margin-top: 20px;
+	text-decoration: none;
+	
+  }
+  
+  .footer a{
+	color: #ffffff;
+	
+  }
+  .footer-a{
+	margin-left: 40%;
+  }
+  
+
+.site-footer {
+	color: #ffffff;
+}
+
+.copyright,
+.footer-nav {
+	
+	border-radius: 7px;
+	padding: 20px 5px;
+	margin: 10px auto;
+	text-align: center;
+}
+
+/* styling social media icons  */
+.fab {
+	padding: 10px;
+	margin: 5px 10px;
+	font-size: 2rem;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
+}
+
+
+
+
+/*adding animations*/
+@keyframes wink {
+	50% {
+		transform: scale(1.2, 0.7);
+	}
+}
+
+.logo {
+	animation-name: wink;
+	animation-duration: 1200ms;
+	animation-delay: 0.5s;
+	animation-iteration-count: 3;
+}
+
+
+
+
+	/* styling contacts page */
+	.contacts {
+		width: 100%;
+		margin: 15px;
+		padding: 10px;
+	}
+
+	.contact-form {
+
+		margin: 1rem 0;
+		font-size: 1rem;
+		max-width: 100%;
+	}
+	/*forms*/
+	#email,
+	#fullname,
+	#message {
+		width: 100%;
+		background: #CCCCFF;
+	}
+
+	.contact-btn {
+		background: #000000;
+		color: #ffffff;
+	}
+
+
+/**
+	 styling desktop version
+*/
+
+@media screen and (min-width: 760px) {
+
+	.fab {
+		padding: 5px;
+	}
+/*header items formatting*/
+	.header-top {
+		display: grid;
+		grid-template-columns: repeat(7, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-areas:
+			"logo logo title title title nav nav"
+			"logo logo title title title search search"
+		;
+	}
+
+
+	.logo {
+		height: auto;
+	}
+/*search box formatting*/
+	.search-box {
+		display: contents;
+		display: inline-block;
+		grid-area: search;
+		width: auto;
+		max-width: 100%;
+	}
+/*navigation displaying in line*/
+	.main-nav li {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: 1fr;
+		grid-template-areas:
+			"nav1 nav2 nav3 nav4 nav5 nav6"
+		;
+	}
+
+	.nav1 {
+		grid-area: nav1;
+	}
+
+	.nav2 {
+		grid-area: nav2;
+	}
+
+	.nav3 {
+		grid-area: nav3;
+	}
+
+	.nav4 {
+		grid-area: nav4;
+	}
+
+	.nav5 {
+		grid-area: nav5;
+	}
+
+	.nav6 {
+		grid-area: nav6;
+	}
+
+	.main-content {
+		max-height: 600px;
+		margin-bottom: 0;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr;
+		grid-template-areas:
+			"img text"
+		;
+	}
+
+}
+/*image formatting*/
+	.main-image {
+		grid-area: img;
+		max-height: 100%;
+		height: 550px;
+		margin: 15px 10px;
+	}
+
+	.main-text {
+		grid-area: text;
+		margin: 15px 30px;
+	}
+/*formatting footer sites*/
+	.site-footer {
+		margin-top: -10px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+		grid-template-areas:
+			"copy nav"
+		;
+	}
+
+	/* styling footer*/
+	.copyright {
+		grid-area: copy;
+		text-align: left;
+		width: 100%;
+		margin-right: 20px;
+		padding: 10px;
+	}
+
+	.fab {
+		margin: 5px 25px;
+	}
+
